@@ -33,11 +33,11 @@ const QUESTIONS = [
   },
   {
     key: "qTemporalAlignment",
-    title: "4. 타깃 소리의 시간 정렬 / Temporal alignment on target sound",
-    helpKo: "영상에서 소스 소리가 발생해야 하는 시점에 타깃 소리가 발생하는지 판단해주세요. 아무 소리나 동작에 맞는 것으로는 충분하지 않으며, 실제 타깃 소리의 시작·반복·쉼·끝이 소스 동작의 시점과 맞아야 합니다. 예를 들어 강아지가 짖는 영상의 타깃이 돼지 울음이라면, 강아지가 짖는 동작을 할 때 돼지 울음이 들리는지 봅니다. 돼지 울음은 다른 시점에 나오고 짖는 동작에 맞춰 알 수 없는 소리만 난다면, 이를 타깃의 올바른 정렬로 보지 마세요. 타깃이 들리지 않아 정렬이 성립하지 않으면 1, 매우 잘 맞으면 5에 가깝게 답해주세요.",
-    helpEn: "Judge whether the target sound occurs when the source sound would be expected from the visible action. An arbitrary sound synchronized with the action is not sufficient: the target's onsets, repetitions, pauses and endings should match the source-action timing. For a barking-dog video with a pig-oinking target, listen for oinks when the dog visibly barks. If oinks occur elsewhere and only an unidentified sound accompanies the barking action, that is not correct target alignment. Use 1 when no audible target alignment is present and ratings closer to 5 when it aligns very well.",
-    text: () => "타깃 소리가 영상에서 소스 소리가 발생해야 하는 시점과 시간적으로 잘 정렬되어 있는가?",
-    english: () => "Does the target sound align with the times when the source sound should occur in the video?",
+    title: "4. 시간 정렬 / Temporal alignment",
+    helpKo: "생성 오디오가 영상 전반의 보이는 움직임과 사건의 타이밍에 맞는지 판단해주세요. 동작의 시작·반복·멈춤·끝, 접촉이나 타격 같은 사건의 시점에 맞춰 어떤 소리가 발생하는지를 보며, 소리의 정체성이 타깃 또는 소스인지 여부는 이 문항에서 따로 고려하지 않습니다. 화면의 동작과 무관하게 소리가 나거나 중요한 동작 시점에 소리가 빠지면 낮게, 생성 오디오의 시간 구조가 영상과 전반적으로 잘 맞으면 높게 답해주세요.",
+    helpEn: "Judge whether the generated audio as a whole follows the timing of visible motions and events in the video. Consider when any audible sound starts, repeats, pauses, or ends relative to actions, contacts, and impacts; do not separately judge whether its identity is the target or source in this question. Rate lower when sounds occur independently of the video or miss important actions, and higher when the generated audio's temporal structure matches the video well overall.",
+    text: () => "생성 오디오가 영상 전반의 동작과 사건의 타이밍에 맞게 발생하는가?",
+    english: () => "Does the generated audio occur in temporal alignment with the visible motions and events in the video?",
   },
   {
     key: "qAudioQuality",

@@ -18,14 +18,14 @@
       <section id="intro-view" class="panel">
         <h2>연구 설명 / Study information</h2>
         <div class="bilingual-copy">
-          <p>Foley는 영상 속 동작에 맞춰 효과음을 만드는 작업입니다. 이 연구의 Counterfactual Video Foley Generation은 영상은 그대로 두고, 원래 상황에서 예상되는 소리 대신 다른 종류의 소리를 생성하는 과제입니다. 소리의 종류는 바뀌더라도 타깃 소리의 시점과 리듬은 영상의 소스 동작에 맞도록 하는 것이 목표입니다.</p>
-          <p lang="en">Foley is the creation of sound effects to accompany actions in a video. Counterfactual Video Foley Generation keeps the video unchanged while generating a different kind of sound from the one expected in the original scene. The sound identity changes, while the target sound’s timing and rhythm should still follow the visible source actions.</p>
+          <p>Foley는 영상 속 동작에 맞춰 효과음을 만드는 작업입니다. 이 연구의 Counterfactual Video Foley Generation은 영상은 그대로 두고, 원래 상황에서 예상되는 소리 대신 다른 종류의 소리를 생성하는 과제입니다. 소리의 종류는 바뀌더라도 생성 오디오의 시점과 리듬은 영상에서 보이는 동작을 따르는 것이 목표입니다.</p>
+          <p lang="en">Foley is the creation of sound effects to accompany actions in a video. Counterfactual Video Foley Generation keeps the video unchanged while generating a different kind of sound from the one expected in the original scene. The sound identity changes, while the generated audio should still follow the timing and rhythm of visible actions.</p>
           <p>각 영상에는 소스(Source)와 타깃(Target)이 표시됩니다. 소스는 원래 장면에서 예상되는 소리이고, 타깃은 새로 표현하려는 소리입니다. 예를 들어 물체를 두드리는 영상에 개 짖는 소리를 요청할 수 있습니다. 이때 화면에 개가 없어도 괜찮으며, 두드리는 시점에 맞춰 짖음이 들리는지를 살펴보면 됩니다. 재생되는 오디오는 원본 녹음이 아니라 평가 대상인 생성 오디오입니다.</p>
           <p lang="en">Each video has a source and a target prompt. The source describes the sound expected from the original scene; the target describes the new sound to convey. For example, a video of an object being struck may be paired with a dog-barking target. A dog need not appear on screen; listen for barking timed to the strikes. The audio you hear is generated audio being evaluated, not the original recording.</p>
           <p>예상 소요 시간은 약 30–40분이며, 재생·응답 속도에 따라 달라질 수 있습니다. 조용한 환경에서 헤드폰 또는 이어폰 사용을 권장합니다. 각 오디오를 끝까지 들은 뒤 문항별로 독립적으로 답해주세요. 필요하면 중간에 쉬어도 되며 진행 상황은 현재 브라우저에 저장됩니다.</p>
           <p lang="en">The estimated duration is about 30–40 minutes and may vary with your playback and response pace. Headphones or earphones in a quiet environment are recommended. Listen to each audio in full and judge each question independently. You may take breaks; progress is saved in this browser.</p>
-          <p>타깃·소스 인지 문항에서는 정확한 타이밍인지와 무관하게 그 소리가 들리는지만 판단합니다. 시간 정렬 문항에서는 아무 소리가 아니라 <strong>타깃 소리</strong>가 소스 동작의 시점에 맞는지 판단합니다. 무관한 소리 문항에서는 타깃·소스에 해당하지 않는 내레이션이나 배경 음악 등이 들리는지 판단합니다.</p>
-          <p lang="en">For target/source evidence, judge whether the sound is audible regardless of timing. For temporal alignment, judge whether the <strong>target sound</strong>, not just any sound, matches the source-action timing. For unrelated evidence, listen for other sounds such as voice-over or background music that belong to neither the target nor the source.</p>
+          <p>타깃·소스 인지 문항에서는 정확한 타이밍인지와 무관하게 그 소리가 들리는지만 판단합니다. 시간 정렬 문항에서는 소리의 정체성과 무관하게 <strong>생성 오디오 전반</strong>이 영상 동작과 사건의 시점에 맞는지 판단합니다. 무관한 소리 문항에서는 타깃·소스에 해당하지 않는 내레이션이나 배경 음악 등이 들리는지 판단합니다.</p>
+          <p lang="en">For target/source evidence, judge whether the sound is audible regardless of timing. For temporal alignment, judge whether the <strong>generated audio as a whole</strong>, regardless of sound identity, matches the timing of visible motions and events. For unrelated evidence, listen for other sounds such as voice-over or background music that belong to neither the target nor the source.</p>
           <p><strong>주의:</strong> 소스 잔류와 무관한 소리 문항은 높은 점수일수록 해당 소리가 더 뚜렷하게 들린다는 뜻입니다.</p>
           <p lang="en"><strong>Note:</strong> Higher source-evidence and unrelated-evidence ratings mean those sounds are more clearly audible.</p>
         </div>
@@ -55,7 +55,7 @@
 
       <section id="tutorial-view" class="panel" hidden>
         <h2>평가 튜토리얼 / Evaluation tutorial</h2>
-        <p>본 평가 전에 예시를 듣고 문항별 판단 기준을 확인해주세요. 타깃 인지가 높아도 타깃의 시간 정렬은 낮을 수 있습니다. 아래 점수는 기준을 설명하기 위한 예시이며, 본 평가에서는 직접 들은 내용을 바탕으로 독립적으로 판단해주세요. / Before evaluation, listen to these examples and review the criteria. High target evidence does not necessarily mean good target timing. The scores illustrate the criteria; judge the actual study outputs independently based on what you hear.</p>
+        <p>본 평가 전에 예시를 듣고 문항별 판단 기준을 확인해주세요. 타깃 인지가 높아도 생성 오디오 전반의 시간 정렬은 낮을 수 있습니다. 아래 점수는 기준을 설명하기 위한 예시이며, 본 평가에서는 직접 들은 내용을 바탕으로 독립적으로 판단해주세요. / Before evaluation, listen to these examples and review the criteria. High target evidence does not necessarily mean good temporal alignment of the generated audio overall. The scores illustrate the criteria; judge the actual study outputs independently based on what you hear.</p>
         <p id="tutorial-scale-note"></p>
         <p>튜토리얼은 평가 응답으로 제출되지 않습니다. 재생바로 원하는 구간을 확인할 수 있으며, 재생 완료 여부와 관계없이 본 평가로 이동할 수 있습니다. / Tutorial examples are not submitted as study responses. Seek to any part and continue to evaluation without a playback completion requirement.</p>
         <div id="tutorial-examples"></div>
@@ -87,6 +87,6 @@
       </section>
     </main>
     <script src="config.js?v=20260905-collector-v9"></script>
-    <script src="app.js?v=20260905-seek-v10"></script>
+    <script src="app.js?v=20260905-temporal-v11"></script>
   </body>
 </html>
