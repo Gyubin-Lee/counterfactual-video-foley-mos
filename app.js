@@ -141,25 +141,28 @@ function saveStudy() {
 function makeTrials(participantId) {
   const methods = [...new Set(manifest.samples.flatMap((sample) => sample.outputs.map((output) => output.methodKey)))];
   const seed = hashString(`${manifest.studyVersion}:${participantId}`);
-  const methodCodes = new Map(
-    seededShuffle(methods, seed ^ 0xa53a9e11).map((method, index) => [method, String.fromCharCode(65 + index)]),
-  );
   const samples = [...manifest.samples].sort((a, b) =>
     (a.dataset === 'VGGSound' ? 0 : 1) - (b.dataset === 'VGGSound' ? 0 : 1) ||
     a.datasetSampleIndex - b.datasetSampleIndex);
-  const trials = samples.flatMap((sample) => sample.outputs.map((output) => ({
-    trialId: `${sample.sampleId}:${output.methodId}`,
-    sampleIndex: sample.sampleIndex,
-    dataset: sample.dataset,
-    datasetSampleIndex: sample.datasetSampleIndex,
-    sampleId: sample.sampleId,
-    sourcePrompt: sample.sourcePrompt,
-    targetPrompt: sample.targetPrompt,
-    methodId: output.methodId,
-    methodCode: methodCodes.get(output.methodKey),
-    videoUrl: sample.videoUrl,
-    audioUrl: output.audioUrl,
-  })).sort((a, b) => a.methodCode.localeCompare(b.methodCode)));
+  const trials = samples.flatMap((sample) => {
+    const methodCodes = new Map(
+      seededShuffle(methods, hashString(`${seed}:${sample.sampleId}`)).map((method, index) =>
+        [method, String.fromCharCode(65 + index)]),
+    );
+    return sample.outputs.map((output) => ({
+      trialId: `${sample.sampleId}:${output.methodId}`,
+      sampleIndex: sample.sampleIndex,
+      dataset: sample.dataset,
+      datasetSampleIndex: sample.datasetSampleIndex,
+      sampleId: sample.sampleId,
+      sourcePrompt: sample.sourcePrompt,
+      targetPrompt: sample.targetPrompt,
+      methodId: output.methodId,
+      methodCode: methodCodes.get(output.methodKey),
+      videoUrl: sample.videoUrl,
+      audioUrl: output.audioUrl,
+    })).sort((a, b) => a.methodCode.localeCompare(b.methodCode));
+  });
   return trials;
 }
 
