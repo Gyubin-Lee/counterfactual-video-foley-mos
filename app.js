@@ -371,6 +371,7 @@ function createModelCard(trial) {
   const card = document.createElement("article");
   card.className = "model-card";
   const title = document.createElement("h3");
+  title.className = "model-card-title";
   title.textContent = `오디오 샘플 / Audio sample ${trial.methodCode}`;
   const video = document.createElement("video");
   video.playsInline = true;
@@ -441,9 +442,14 @@ function createModelCard(trial) {
       status.textContent = "미디어를 불러오지 못했습니다. / Failed to load media.";
     });
   }
-  card.append(title, video, audio, button, pause, timeline, volume, status);
+  const mediaColumn = document.createElement('div');
+  mediaColumn.className = 'model-media';
+  mediaColumn.append(video, audio, button, pause, timeline, volume, status);
   const response = study.responses[trial.trialId] || {};
-  card.append(...QUESTIONS.map(q => scaleControl(q, trial, response[q.key], card)));
+  const questionsColumn = document.createElement('div');
+  questionsColumn.className = 'model-questions';
+  questionsColumn.append(...QUESTIONS.map(q => scaleControl(q, trial, response[q.key], card)));
+  card.append(title, mediaColumn, questionsColumn);
   return card;
 }
 
