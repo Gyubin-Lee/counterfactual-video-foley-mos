@@ -1,0 +1,57 @@
+{
+  "version": "tutorial-v1",
+  "zeroMeansMinimum": true,
+  "examples": [
+    {
+      "id": "example-1",
+      "sourcePrompt": "dog barking",
+      "targetPrompt": "pig oinking",
+      "referenceScores": [
+        5,
+        0,
+        0,
+        5,
+        5
+      ],
+      "titleKo": "예시 1: 타깃 인지와 시간 정렬이 모두 좋은 경우",
+      "titleEn": "Example 1: Clear target sound with good target timing",
+      "explanationKo": "돼지 울음이 분명하게 들리고 강아지가 짖는 동작의 시점에 잘 맞습니다. 강아지 짖는 소리나 무관한 소리는 느껴지지 않으며, 전반적인 음질도 좋다고 평가하는 사례입니다.",
+      "explanationEn": "Pig oinks are clearly audible and align well with the dog's visible barking actions. Barking and unrelated sounds are not perceived, and the overall audio quality is judged to be good.",
+      "videoUrl": "media/tutorial/example-1.mp4"
+    },
+    {
+      "id": "example-2",
+      "sourcePrompt": "dog barking",
+      "targetPrompt": "pig oinking",
+      "referenceScores": [
+        4,
+        0,
+        5,
+        0,
+        3
+      ],
+      "titleKo": "예시 2: 타깃은 들리지만 소스 동작에 맞지 않는 경우",
+      "titleEn": "Example 2: Audible target at the wrong times",
+      "explanationKo": "돼지 울음은 들리므로 타깃 인지는 높게 평가할 수 있지만, 강아지가 짖는 동작의 시점에는 돼지 울음 대신 알 수 없는 소리가 납니다. 강아지 짖는 소리 자체는 느껴지지 않습니다. 알 수 없는 소리가 동작에 맞더라도 타깃의 시간 정렬로 인정하지 않으며, 무관한 소리 인지는 높게, 타깃 시간 정렬은 낮게 평가합니다. 음질은 보통인 사례입니다.",
+      "explanationEn": "Pig oinks are audible, so target evidence can be rated highly, but unidentified sounds rather than oinks accompany the dog's barking actions. Barking itself is not perceived. An unidentified sound matching the action does not count as target alignment: unrelated evidence is high and target temporal alignment is low. Audio quality is judged neutral.",
+      "videoUrl": "media/tutorial/example-2.mp4"
+    },
+    {
+      "id": "example-3",
+      "sourcePrompt": "a stick hitting paper",
+      "targetPrompt": "playing tambourine",
+      "referenceScores": [
+        5,
+        0,
+        0,
+        1,
+        5
+      ],
+      "titleKo": "예시 3: 타깃과 음질은 좋지만 타격 시점과 무관한 경우",
+      "titleEn": "Example 3: Clear, high-quality target independent of the impacts",
+      "explanationKo": "탬버린 소리는 분명하게 들리고 종이를 두드리는 소리나 무관한 소리는 느껴지지 않습니다. 다만 탬버린이 종이를 두드리는 장면의 시점과 무관하게 나므로, 타깃 인지와 음질은 높게 평가하더라도 타깃 시간 정렬은 낮게 평가합니다.",
+      "explanationEn": "Tambourine is clearly audible, while paper impacts and unrelated sounds are not perceived. However, the tambourine occurs independently of the visible paper-striking events. Target evidence and audio quality are therefore rated highly, but target temporal alignment is rated poorly.",
+      "videoUrl": "media/tutorial/example-3.mp4"
+    }
+  ]
+}

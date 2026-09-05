@@ -1,0 +1,1596 @@
+{
+  "schemaVersion": 1,
+  "studyVersion": "vgg15-gh16-eightarm-fiveq-namephone-v4",
+  "dataset": "VGGSound + Greatest Hits",
+  "sampleCount": 31,
+  "methodCount": 8,
+  "expectedTrialCount": 248,
+  "clipSeconds": 8,
+  "samples": [
+    {
+      "sampleIndex": 1,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 1,
+      "sampleId": "07FxCXxknY4_000030",
+      "sourcePrompt": "playing acoustic guitar",
+      "targetPrompt": "playing piano",
+      "videoUrl": "media/video/01.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/01/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/01/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/01/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/01/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/01/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/01/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/01/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/01/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 2,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 2,
+      "sampleId": "RcVJVUfXWgU_000120",
+      "sourcePrompt": "playing electronic organ",
+      "targetPrompt": "playing accordion",
+      "videoUrl": "media/video/02.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/02/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/02/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/02/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/02/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/02/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/02/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/02/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/02/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 3,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 3,
+      "sampleId": "RObYRwt7b8U_000189",
+      "sourcePrompt": "playing tambourine",
+      "targetPrompt": "tap dancing",
+      "videoUrl": "media/video/03.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/03/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/03/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/03/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/03/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/03/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/03/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/03/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/03/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 4,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 4,
+      "sampleId": "H2g3fH2PfM0_000102",
+      "sourcePrompt": "warbler chirping",
+      "targetPrompt": "chicken clucking",
+      "videoUrl": "media/video/04.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/04/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/04/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/04/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/04/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/04/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/04/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/04/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/04/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 5,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 5,
+      "sampleId": "8FZM56axVms_000081",
+      "sourcePrompt": "elk bugling",
+      "targetPrompt": "train whistling",
+      "videoUrl": "media/video/05.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/05/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/05/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/05/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/05/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/05/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/05/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/05/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/05/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 6,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 6,
+      "sampleId": "WxA-P0RVWzo_000030",
+      "sourcePrompt": "dog barking",
+      "targetPrompt": "baby laughter",
+      "videoUrl": "media/video/06.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/06/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/06/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/06/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/06/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/06/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/06/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/06/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/06/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 7,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 7,
+      "sampleId": "IevRzGh8uMs_000134",
+      "sourcePrompt": "train whistling",
+      "targetPrompt": "elephant trumpeting",
+      "videoUrl": "media/video/07.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/07/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/07/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/07/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/07/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/07/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/07/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/07/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/07/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 8,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 8,
+      "sampleId": "dtGl5xh6g0g_000138",
+      "sourcePrompt": "tractor digging",
+      "targetPrompt": "helicopter",
+      "videoUrl": "media/video/08.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/08/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/08/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/08/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/08/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/08/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/08/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/08/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/08/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 9,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 9,
+      "sampleId": "tJeSG7_rM2I_000257",
+      "sourcePrompt": "opening or closing car electric windows",
+      "targetPrompt": "baby crying",
+      "videoUrl": "media/video/09.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/09/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/09/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/09/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/09/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/09/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/09/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/09/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/09/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 10,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 10,
+      "sampleId": "GyHmkrrU0ZM_000125",
+      "sourcePrompt": "beat boxing",
+      "targetPrompt": "playing congas",
+      "videoUrl": "media/video/10.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/10/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/10/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/10/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/10/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/10/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/10/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/10/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/10/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 11,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 11,
+      "sampleId": "dIIiaO12I5Q_000006",
+      "sourcePrompt": "baby crying",
+      "targetPrompt": "dog howling",
+      "videoUrl": "media/video/11.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/11/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/11/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/11/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/11/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/11/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/11/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/11/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/11/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 12,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 12,
+      "sampleId": "qEBAFHQkGnc_000164",
+      "sourcePrompt": "female speech, woman speaking",
+      "targetPrompt": "child speech, kid speaking",
+      "videoUrl": "media/video/12.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/12/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/12/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/12/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/12/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/12/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/12/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/12/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/12/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 13,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 13,
+      "sampleId": "VudaWX3XJoQ_000129",
+      "sourcePrompt": "golf driving",
+      "targetPrompt": "opening or closing car doors",
+      "videoUrl": "media/video/13.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/13/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/13/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/13/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/13/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/13/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/13/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/13/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/13/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 14,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 14,
+      "sampleId": "JEaWbkxzFIk_000000",
+      "sourcePrompt": "basketball bounce",
+      "targetPrompt": "playing tennis",
+      "videoUrl": "media/video/14.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/14/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/14/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/14/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/14/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/14/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/14/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/14/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/14/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 15,
+      "dataset": "VGGSound",
+      "datasetSampleIndex": 15,
+      "sampleId": "IOu7cOZgZE4_000272",
+      "sourcePrompt": "tap dancing",
+      "targetPrompt": "playing table tennis",
+      "videoUrl": "media/video/15.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/15/mmaudio_counterflow_tap.m4a"
+        },
+        {
+          "methodId": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/15/omni2sound_fvt_v0st_sigmoid_alpha12to25.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/15/mmaudio_strict_counterflow.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/15/omni2sound_strict_counterflow_cfg25scaled_t68.m4a"
+        },
+        {
+          "methodId": "cafa_default",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/15/cafa_default.m4a"
+        },
+        {
+          "methodId": "controlfoley_default",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/15/controlfoley_default.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/15/mmaudio_direct.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/15/omni2sound_direct.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 16,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 1,
+      "sampleId": "cloth_clip_mtcmls6b_134sykt",
+      "sourcePrompt": "a stick hitting cloth",
+      "targetPrompt": "cap gun shooting",
+      "videoUrl": "media/video/16.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/16/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/16/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/16/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/16/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/16/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/16/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/16/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/16/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 17,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 2,
+      "sampleId": "cloth_clip_mtcmmqwv_o1j3bv",
+      "sourcePrompt": "a stick hitting cloth",
+      "targetPrompt": "cap gun shooting",
+      "videoUrl": "media/video/17.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/17/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/17/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/17/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/17/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/17/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/17/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/17/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/17/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 18,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 3,
+      "sampleId": "dirt_clip_mth82vcr_1ut9pik",
+      "sourcePrompt": "a stick hitting dirt",
+      "targetPrompt": "hammering nails",
+      "videoUrl": "media/video/18.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/18/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/18/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/18/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/18/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/18/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/18/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/18/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/18/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 19,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 4,
+      "sampleId": "dirt_clip_mth80f0p_17up31w",
+      "sourcePrompt": "a stick hitting dirt",
+      "targetPrompt": "playing snare drum",
+      "videoUrl": "media/video/19.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/19/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/19/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/19/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/19/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/19/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/19/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/19/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/19/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 20,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 5,
+      "sampleId": "glass_clip_mth6qwbx_19dpz1m",
+      "sourcePrompt": "a stick hitting glass",
+      "targetPrompt": "playing bongo",
+      "videoUrl": "media/video/20.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/20/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/20/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/20/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/20/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/20/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/20/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/20/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/20/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 21,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 6,
+      "sampleId": "glass_clip_mth6rx27_cncm7w",
+      "sourcePrompt": "a stick hitting glass",
+      "targetPrompt": "playing tambourine",
+      "videoUrl": "media/video/21.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/21/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/21/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/21/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/21/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/21/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/21/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/21/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/21/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 22,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 7,
+      "sampleId": "metal_clip_mtcvgsty_xs7ilt",
+      "sourcePrompt": "a stick hitting metal",
+      "targetPrompt": "people finger snapping",
+      "videoUrl": "media/video/22.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/22/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/22/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/22/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/22/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/22/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/22/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/22/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/22/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 23,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 8,
+      "sampleId": "metal_clip_mtcv92nx_1pmi2em",
+      "sourcePrompt": "a stick hitting metal",
+      "targetPrompt": "playing tambourine",
+      "videoUrl": "media/video/23.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/23/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/23/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/23/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/23/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/23/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/23/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/23/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/23/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 24,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 9,
+      "sampleId": "paper_clip_mth7f8fr_184uf2o",
+      "sourcePrompt": "a stick hitting paper",
+      "targetPrompt": "playing glockenspiel",
+      "videoUrl": "media/video/24.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/24/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/24/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/24/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/24/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/24/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/24/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/24/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/24/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 25,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 10,
+      "sampleId": "paper_clip_mth7hw1v_hwhiu1",
+      "sourcePrompt": "a stick hitting paper",
+      "targetPrompt": "playing glockenspiel",
+      "videoUrl": "media/video/25.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/25/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/25/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/25/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/25/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/25/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/25/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/25/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/25/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 26,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 11,
+      "sampleId": "plastic_clip_mtcx83mw_1q5db65",
+      "sourcePrompt": "a stick hitting plastic",
+      "targetPrompt": "dog barking",
+      "videoUrl": "media/video/26.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/26/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/26/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/26/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/26/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/26/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/26/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/26/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/26/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 27,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 12,
+      "sampleId": "plastic_clip_mtcxtyku_x9skdw",
+      "sourcePrompt": "a stick hitting plastic",
+      "targetPrompt": "playing bongo",
+      "videoUrl": "media/video/27.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/27/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/27/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/27/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/27/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/27/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/27/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/27/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/27/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 28,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 13,
+      "sampleId": "rock_clip_mth8mdsf_o10pc2",
+      "sourcePrompt": "a stick hitting rock",
+      "targetPrompt": "dog barking",
+      "videoUrl": "media/video/28.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/28/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/28/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/28/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/28/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/28/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/28/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/28/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/28/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 29,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 14,
+      "sampleId": "rock_clip_mth8k1xh_1mtpd3p",
+      "sourcePrompt": "a stick hitting rock",
+      "targetPrompt": "hammering nails",
+      "videoUrl": "media/video/29.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/29/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/29/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/29/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/29/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/29/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/29/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/29/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/29/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 30,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 15,
+      "sampleId": "wood_clip_mtcz29to_9ynl3t",
+      "sourcePrompt": "a stick hitting wood",
+      "targetPrompt": "people finger snapping",
+      "videoUrl": "media/video/30.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/30/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/30/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/30/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/30/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/30/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/30/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/30/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/30/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    },
+    {
+      "sampleIndex": 31,
+      "dataset": "Greatest Hits",
+      "datasetSampleIndex": 16,
+      "sampleId": "wood_clip_mtcyzane_19benyz",
+      "sourcePrompt": "a stick hitting wood",
+      "targetPrompt": "playing snare drum",
+      "videoUrl": "media/video/31.mp4",
+      "outputs": [
+        {
+          "methodId": "mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_counterflow_tap",
+          "audioUrl": "media/audio/31/mmaudio_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_fvt_v0st_sigmoid_alpha12to25",
+          "audioUrl": "media/audio/31/omni2sound_counterflow_tap_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_strict_counterflow",
+          "audioUrl": "media/audio/31/mmaudio_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_strict_counterflow_cfg25scaled_t68",
+          "audioUrl": "media/audio/31/omni2sound_strict_counterflow_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "cafa_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "cafa_default",
+          "audioUrl": "media/audio/31/cafa_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "controlfoley_default_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "controlfoley_default",
+          "audioUrl": "media/audio/31/controlfoley_default_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "mmaudio_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "mmaudio_direct",
+          "audioUrl": "media/audio/31/mmaudio_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        },
+        {
+          "methodId": "omni2sound_direct_greatest_hits_stick_vggsound10_160x10",
+          "methodKey": "omni2sound_direct",
+          "audioUrl": "media/audio/31/omni2sound_direct_greatest_hits_stick_vggsound10_160x10.m4a"
+        }
+      ]
+    }
+  ],
+  "datasetCounts": {
+    "VGGSound": 15,
+    "Greatest Hits": 16
+  }
+}
