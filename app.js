@@ -28,8 +28,8 @@ const QUESTIONS = [
     title: "3. 무관한 소리 인지 / Unrelated sound evidence",
     helpKo: "타깃과 소스 어느 쪽에도 해당하지 않는 다른 소리가 생성 오디오에서 들리는지 판단해주세요. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 뚜렷하게 들린다는 뜻입니다.",
     helpEn: "Judge whether you hear sounds belonging to neither the target nor the source, such as voice-over, background music, or unidentified other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly audible unrelated sounds.",
-    text: () => "생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 내레이션, 배경 음악)가 느껴지는가?",
-    english: () => "Can you perceive other sounds unrelated to the target and source, such as voice-over or background music?",
+    text: () => "생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 소스 혹은 타깃으로 판단되지 않는 소리, 내레이션, 배경 음악)가 느껴지는가?",
+    english: () => "Can you perceive other sounds unrelated to the target and source, such as sounds that cannot be identified as either the source or the target, voice-over, or background music?",
   },
   {
     key: "qTemporalAlignment",
