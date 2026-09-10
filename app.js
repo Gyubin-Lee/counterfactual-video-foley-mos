@@ -28,8 +28,8 @@ const QUESTIONS = [
     title: "3. 무관한 소리 인지 / Unrelated sound evidence",
     helpKo: "타깃과 소스 어느 쪽에도 해당하지 않는 다른 소리가 생성 오디오에서 들리는지 판단해주세요. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 뚜렷하게 들린다는 뜻입니다.",
     helpEn: "Judge whether you hear sounds belonging to neither the target nor the source, such as voice-over, background music, or unidentified other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly audible unrelated sounds.",
-    text: () => "생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 소스 혹은 타깃으로 판단되지 않는 소리, 내레이션, 배경 음악)가 느껴지는가?",
-    english: () => "Can you perceive other sounds unrelated to the target and source, such as sounds that cannot be identified as either the source or the target, voice-over, or background music?",
+    text: () => "생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 내레이션, 배경 음악)가 느껴지는가?",
+    english: () => "Can you perceive other sounds unrelated to the target and source, such as voice-over or background music?",
   },
   {
     key: "qTemporalAlignment",
@@ -141,28 +141,25 @@ function saveStudy() {
 function makeTrials(participantId) {
   const methods = [...new Set(manifest.samples.flatMap((sample) => sample.outputs.map((output) => output.methodKey)))];
   const seed = hashString(`${manifest.studyVersion}:${participantId}`);
+  const methodCodes = new Map(
+    seededShuffle(methods, seed ^ 0xa53a9e11).map((method, index) => [method, String.fromCharCode(65 + index)]),
+  );
   const samples = [...manifest.samples].sort((a, b) =>
     (a.dataset === 'VGGSound' ? 0 : 1) - (b.dataset === 'VGGSound' ? 0 : 1) ||
     a.datasetSampleIndex - b.datasetSampleIndex);
-  const trials = samples.flatMap((sample) => {
-    const methodCodes = new Map(
-      seededShuffle(methods, hashString(`${seed}:${sample.sampleId}`)).map((method, index) =>
-        [method, String.fromCharCode(65 + index)]),
-    );
-    return sample.outputs.map((output) => ({
-      trialId: `${sample.sampleId}:${output.methodId}`,
-      sampleIndex: sample.sampleIndex,
-      dataset: sample.dataset,
-      datasetSampleIndex: sample.datasetSampleIndex,
-      sampleId: sample.sampleId,
-      sourcePrompt: sample.sourcePrompt,
-      targetPrompt: sample.targetPrompt,
-      methodId: output.methodId,
-      methodCode: methodCodes.get(output.methodKey),
-      videoUrl: sample.videoUrl,
-      audioUrl: output.audioUrl,
-    })).sort((a, b) => a.methodCode.localeCompare(b.methodCode));
-  });
+  const trials = samples.flatMap((sample) => sample.outputs.map((output) => ({
+    trialId: `${sample.sampleId}:${output.methodId}`,
+    sampleIndex: sample.sampleIndex,
+    dataset: sample.dataset,
+    datasetSampleIndex: sample.datasetSampleIndex,
+    sampleId: sample.sampleId,
+    sourcePrompt: sample.sourcePrompt,
+    targetPrompt: sample.targetPrompt,
+    methodId: output.methodId,
+    methodCode: methodCodes.get(output.methodKey),
+    videoUrl: sample.videoUrl,
+    audioUrl: output.audioUrl,
+  })).sort((a, b) => a.methodCode.localeCompare(b.methodCode)));
   return trials;
 }
 
@@ -361,7 +358,7 @@ function renderTrial() {
   const trial = trials[0];
   study.currentIndex = currentIndex;
   saveStudy();
-  $("#progress-label").textContent = `${trial.dataset} · 페이지 / Page ${currentIndex + 1} / ${pages().length} · ${trial.datasetSampleIndex} / ${trial.dataset === 'VGGSound' ? 15 : 16}`;
+  $("#progress-label").textContent = `${trial.dataset} · 페이지 / Page ${currentIndex + 1} / ${pages().length} · ${trial.datasetSampleIndex} / ${manifest.samples.length}`;
   $("#sample-label").textContent = `${trial.dataset} · 영상 / Video ${trial.datasetSampleIndex} · 8개 출력 / 8 outputs`;
   $("#prompt-pair").textContent = `소스 / Source: ${trial.sourcePrompt} → 타깃 / Target: ${trial.targetPrompt}`;
   $("#model-cards").replaceChildren(...trials.map(createModelCard));
@@ -374,7 +371,6 @@ function createModelCard(trial) {
   const card = document.createElement("article");
   card.className = "model-card";
   const title = document.createElement("h3");
-  title.className = "model-card-title";
   title.textContent = `오디오 샘플 / Audio sample ${trial.methodCode}`;
   const video = document.createElement("video");
   video.playsInline = true;
@@ -445,14 +441,9 @@ function createModelCard(trial) {
       status.textContent = "미디어를 불러오지 못했습니다. / Failed to load media.";
     });
   }
-  const mediaColumn = document.createElement('div');
-  mediaColumn.className = 'model-media';
-  mediaColumn.append(video, audio, button, pause, timeline, volume, status);
+  card.append(title, video, audio, button, pause, timeline, volume, status);
   const response = study.responses[trial.trialId] || {};
-  const questionsColumn = document.createElement('div');
-  questionsColumn.className = 'model-questions';
-  questionsColumn.append(...QUESTIONS.map(q => scaleControl(q, trial, response[q.key], card)));
-  card.append(title, mediaColumn, questionsColumn);
+  card.append(...QUESTIONS.map(q => scaleControl(q, trial, response[q.key], card)));
   return card;
 }
 
@@ -484,7 +475,7 @@ function updateNextState() {
   $("#next-trial").disabled = !pageComplete(trials);
   $("#next-trial").textContent = currentIndex === pages().length - 1
     ? "제출 확인 / Review submission"
-    : currentIndex === 14 ? "GH 평가 시작 / Start GH evaluation" : "다음 페이지 / Next page";
+    : "다음 페이지 / Next page";
 }
 
 async function playTrial(video, audio, status, slider, startTime = 0) {
@@ -623,12 +614,12 @@ async function initialize() {
     const tutorialResponse = await fetch('tutorial.json', {cache: 'no-store'});
     if (!tutorialResponse.ok) throw new Error(`tutorial HTTP ${tutorialResponse.status}`);
     tutorial = await tutorialResponse.json();
-    if (tutorial.examples?.length !== 3 || tutorial.examples.some(e =>
+    if (tutorial.examples?.length !== 2 || tutorial.examples.some(e =>
       !e.videoUrl || e.referenceScores?.length !== QUESTIONS.length ||
       e.referenceScores.some(v => !Number.isInteger(v) || v < 0 || v > 5))) throw new Error('invalid tutorial');
-    if (manifest.samples?.length !== 31 || manifest.expectedTrialCount !== 248 ||
+    if (manifest.samples?.length !== 20 || manifest.expectedTrialCount !== 160 ||
         manifest.methodCount !== 8 || manifest.clipSeconds !== 8 ||
-        manifest.samples.some((sample) => sample.outputs.length !== 8)) {
+        manifest.samples.some((sample) => sample.dataset !== "VGGSound" || sample.outputs.length !== 8)) {
       throw new Error("invalid study manifest");
     }
   } catch (error) {
