@@ -6,30 +6,40 @@ const SCALE = [
   [4, "약간 그렇다", "Somewhat agree"],
   [5, "매우 그렇다", "Strongly agree"],
 ];
+const SEMANTIC_SCALE = [
+  [1, "전혀 들리지 않음", "Not audible at all"],
+  [2, "희미하게 들림", "Faintly audible"],
+  [3, "보통 정도로 뚜렷하게 들림", "Moderately clear"],
+  [4, "뚜렷하게 들림", "Clearly audible"],
+  [5, "매우 뚜렷하게 들림", "Very clearly audible"],
+];
 const QUESTIONS = [
   {
     key: "qTargetEvidence",
+    scale: SEMANTIC_SCALE,
     title: "1. 타깃 소리 인지 / Target sound evidence",
     helpKo: "타깃(Target)은 새로 들려주려는 소리입니다. 생성 오디오를 들었을 때 지정된 타깃의 특징을 얼마나 느낄 수 있는지 판단해주세요. 예를 들어 타깃이 개 짖는 소리라면 실제로 짖음의 특징이 들리는지 평가합니다. 화면에 개가 보이는지는 이 문항의 기준이 아닙니다. 정확한 시점에 나는지는 고려하지 말고, 영상의 다른 시점에 들리더라도 타깃 소리로 판단해주세요. 음질과도 별도로 판단하며, 타깃이 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요.",
     helpEn: "The target is the new sound requested for the video. Judge how clearly you can hear its characteristic identity in the generated audio. For a dog-barking target, listen for the qualities of barking; a dog does not need to appear on screen. Ignore whether it occurs at the correct time: a target sound at a different time still counts as target evidence. Judge this separately from audio quality. Use ratings closer to 1 when the target is not perceived and closer to 5 when it is very clear.",
-    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.targetPrompt}” 소리가 느껴지는가?`,
-    english: (trial) => `Can you perceive “${trial.targetPrompt}” in the generated audio, regardless of its timing?`,
+    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.targetPrompt}” 소리가 얼마나 뚜렷하게 들립니까?`,
+    english: (trial) => `How clearly can you hear “${trial.targetPrompt}” in the generated audio, regardless of its timing?`,
   },
   {
     key: "qSourceEvidence",
+    scale: SEMANTIC_SCALE,
     title: "2. 소스 소리 잔류 / Source sound evidence",
     helpKo: "소스(Source)는 영상의 원래 상황에서 예상되는 소리입니다. 생성 오디오에 이 소스 소리의 특징이 얼마나 남아 들리는지 판단해주세요. 화면에 소스 물체나 동물이 보인다는 이유만으로 소리가 들린다고 판단하지 말고, 실제 들리는 오디오에 근거해 답해주세요. 소스 소리가 정확한 시점에 나는지는 고려하지 말고, 영상의 다른 시점에 들려도 소스 소리로 판단해주세요. 소스가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답합니다. 이 문항은 높은 점수일수록 소스 소리가 더 많이 남아 있다는 뜻이며, 좋고 나쁨을 직접 묻는 문항이 아닙니다.",
     helpEn: "The source is the sound expected from the original scene. Judge how much of its characteristic identity remains audible in the generated audio. Base your answer on what you hear, not merely on seeing the source object or animal. Ignore whether it occurs at the correct time: a source sound at a different time still counts as source evidence. Use ratings closer to 1 when the source is not perceived and closer to 5 when it is very clear. A higher score means more source sound remains; this question does not directly ask whether the result is good or bad.",
-    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.sourcePrompt}” 소리가 느껴지는가?`,
-    english: (trial) => `Can you perceive “${trial.sourcePrompt}” in the generated audio, regardless of its timing?`,
+    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.sourcePrompt}” 소리가 얼마나 뚜렷하게 들립니까?`,
+    english: (trial) => `How clearly can you hear “${trial.sourcePrompt}” in the generated audio, regardless of its timing?`,
   },
   {
     key: "qUnrelatedEvidence",
+    scale: SEMANTIC_SCALE,
     title: "3. 무관한 소리 인지 / Unrelated sound evidence",
     helpKo: "타깃과 소스 어느 쪽에도 해당하지 않는 다른 소리가 생성 오디오에서 들리는지 판단해주세요. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 뚜렷하게 들린다는 뜻입니다.",
     helpEn: "Judge whether you hear sounds belonging to neither the target nor the source, such as voice-over, background music, or unidentified other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly audible unrelated sounds.",
-    text: () => "생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 내레이션, 배경 음악)가 느껴지는가?",
-    english: () => "Can you perceive other sounds unrelated to the target and source, such as voice-over or background music?",
+    text: () => "타이밍과 무관하게, 생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 내레이션, 배경 음악)가 얼마나 뚜렷하게 들립니까?",
+    english: () => "Regardless of timing, how clearly can you hear other sounds unrelated to the target and source, such as voice-over or background music, in the generated audio?",
   },
   {
     key: "qTemporalAlignment",
@@ -49,6 +59,31 @@ const QUESTIONS = [
   },
 
 ];
+
+for (const question of QUESTIONS.filter(q => q.scale === SEMANTIC_SCALE)) {
+  question.helpKo += " 단순한 음량이나 지속 시간이 아니라, 해당 소리로 알아들을 수 있는 정도를 평가해주세요. 1은 전혀 들리지 않음, 2는 희미하게 들림, 3은 보통 정도로 뚜렷하게 들림, 4는 뚜렷하게 들림, 5는 매우 뚜렷하게 들림입니다.";
+  question.helpEn += " Rate how clearly you can recognize the sound, rather than loudness or duration alone: 1 = not audible at all, 2 = faintly audible, 3 = moderately clear, 4 = clearly audible, 5 = very clearly audible.";
+}
+
+function soundSearchLinks(question, trial) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'sound-search-links';
+  const roles = question.key === 'qTargetEvidence' ? ['target']
+    : question.key === 'qSourceEvidence' ? ['source']
+    : question.key === 'qUnrelatedEvidence' ? ['target', 'source'] : [];
+  for (const role of roles) {
+    const prompt = trial[`${role}Prompt`];
+    const link = document.createElement('a');
+    link.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${prompt} sound`)}`;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = role === 'target' ? '타깃 소리 검색 / Target on YouTube ↗' : '소스 소리 검색 / Source on YouTube ↗';
+    link.setAttribute('aria-label', `${link.textContent}: ${prompt} (새 탭 / new tab)`);
+    link.addEventListener('click', () => stopPlayback());
+    wrapper.appendChild(link);
+  }
+  return wrapper;
+}
 
 const $ = (selector) => document.querySelector(selector);
 const config = window.MOS_CONFIG || {};
@@ -299,7 +334,10 @@ function showTutorial() {
       const row = document.createElement('tr');
       const label = document.createElement('th');
       label.scope = 'row'; label.textContent = q.title;
-      const value = document.createElement('td'); value.textContent = String(scores[i]);
+      if (q.scale === SEMANTIC_SCALE) label.appendChild(soundSearchLinks(q, example));
+      const value = document.createElement('td');
+      const anchor = (q.scale || SCALE).find(entry => entry[0] === scores[i]);
+      value.textContent = `${scores[i]} · ${anchor[1]} / ${anchor[2]}`;
       row.append(label, value); table.appendChild(row);
     });
     card.append(title, prompts, video, play, status, table);
@@ -330,9 +368,10 @@ function scaleControl(question, trial, selected, card) {
   heading.textContent = `${question.text(trial)} / ${question.english(trial)}`;
   wrapper.appendChild(heading);
   wrapper.appendChild(questionHelp(question));
+  if (question.scale === SEMANTIC_SCALE) wrapper.appendChild(soundSearchLinks(question, trial));
   const scale = document.createElement("div");
   scale.className = "scale";
-  for (const [value, korean, english] of SCALE) {
+  for (const [value, korean, english] of (question.scale || SCALE)) {
     const label = document.createElement("label");
     const input = document.createElement("input");
     input.type = "radio";

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "studyVersion": "vgg20-eightarm-fiveq-namephone-v5",
+  "studyVersion": "vgg20-eightarm-fiveq-clarity-v6",
   "dataset": "VGGSound",
   "sampleCount": 20,
   "methodCount": 8,
