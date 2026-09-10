@@ -285,7 +285,7 @@ function showTutorial() {
     study.tutorialFinished = false;
   }
   $('#tutorial-scale-note').textContent = tutorial.zeroMeansMinimum
-    ? '예시 점수는 실제 평가와 같은 1–5 척도입니다. 1은 해당 문항에 매우 그렇지 않다는 뜻입니다. / Example scores use the same 1–5 scale as the study; 1 means strongly disagree.'
+    ? '예시 점수는 실제 평가와 같은 1–5 척도입니다. 소리 인지 문항의 1은 전혀 들리지 않음, 시간 정렬·음질 문항의 1은 매우 그렇지 않음을 뜻합니다. / Example scores use the study’s 1–5 scales: 1 means not audible at all for sound evidence and strongly disagree for temporal alignment and audio quality.'
     : '예시의 0은 해당 소리가 없거나 정렬이 없다는 설명용 표시입니다. 실제 평가에서는 0 대신 최저점 1을 선택하세요. / A tutorial score of 0 denotes absence; in the actual 1–5 study, use 1 instead.';
   $('#tutorial-examples').replaceChildren(...tutorial.examples.map(example => {
     const card = document.createElement('article');
