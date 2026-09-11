@@ -20,8 +20,8 @@ const QUESTIONS = [
     title: "1. 타깃 소리 인지 / Target sound evidence",
     helpKo: "타깃(Target)은 새로 들려주려는 소리입니다. 생성 오디오를 들었을 때 지정된 타깃의 특징을 얼마나 느낄 수 있는지 판단해주세요. 예를 들어 타깃이 개 짖는 소리라면 실제로 짖음의 특징이 들리는지 평가합니다. 화면에 개가 보이는지는 이 문항의 기준이 아닙니다. 정확한 시점에 나는지는 고려하지 말고, 영상의 다른 시점에 들리더라도 타깃 소리로 판단해주세요. 음질과도 별도로 판단하며, 타깃이 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요.",
     helpEn: "The target is the new sound requested for the video. Judge how clearly you can hear its characteristic identity in the generated audio. For a dog-barking target, listen for the qualities of barking; a dog does not need to appear on screen. Ignore whether it occurs at the correct time: a target sound at a different time still counts as target evidence. Judge this separately from audio quality. Use ratings closer to 1 when the target is not perceived and closer to 5 when it is very clear.",
-    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.targetPrompt}” 소리가 얼마나 뚜렷하게 들립니까?`,
-    english: (trial) => `How clearly can you hear “${trial.targetPrompt}” in the generated audio, regardless of its timing?`,
+    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.targetPrompt}” 소리로 얼마나 명확하게 인지됩니까?`,
+    english: (trial) => `How clearly do you recognize the generated audio as “${trial.targetPrompt}”, regardless of its timing?`,
   },
   {
     key: "qSourceEvidence",
@@ -29,17 +29,17 @@ const QUESTIONS = [
     title: "2. 소스 소리 잔류 / Source sound evidence",
     helpKo: "소스(Source)는 영상의 원래 상황에서 예상되는 소리입니다. 생성 오디오에 이 소스 소리의 특징이 얼마나 남아 들리는지 판단해주세요. 화면에 소스 물체나 동물이 보인다는 이유만으로 소리가 들린다고 판단하지 말고, 실제 들리는 오디오에 근거해 답해주세요. 소스 소리가 정확한 시점에 나는지는 고려하지 말고, 영상의 다른 시점에 들려도 소스 소리로 판단해주세요. 소스가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답합니다. 이 문항은 높은 점수일수록 소스 소리가 더 많이 남아 있다는 뜻이며, 좋고 나쁨을 직접 묻는 문항이 아닙니다.",
     helpEn: "The source is the sound expected from the original scene. Judge how much of its characteristic identity remains audible in the generated audio. Base your answer on what you hear, not merely on seeing the source object or animal. Ignore whether it occurs at the correct time: a source sound at a different time still counts as source evidence. Use ratings closer to 1 when the source is not perceived and closer to 5 when it is very clear. A higher score means more source sound remains; this question does not directly ask whether the result is good or bad.",
-    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.sourcePrompt}” 소리가 얼마나 뚜렷하게 들립니까?`,
-    english: (trial) => `How clearly can you hear “${trial.sourcePrompt}” in the generated audio, regardless of its timing?`,
+    text: (trial) => `타이밍과 무관하게, 생성된 오디오에서 “${trial.sourcePrompt}” 소리로 얼마나 명확하게 인지됩니까?`,
+    english: (trial) => `How clearly do you recognize the generated audio as “${trial.sourcePrompt}”, regardless of its timing?`,
   },
   {
     key: "qUnrelatedEvidence",
     scale: SEMANTIC_SCALE,
     title: "3. 무관한 소리 인지 / Unrelated sound evidence",
-    helpKo: "타깃과 소스 어느 쪽에도 해당하지 않는 다른 소리가 생성 오디오에서 들리는지 판단해주세요. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 뚜렷하게 들린다는 뜻입니다.",
-    helpEn: "Judge whether you hear sounds belonging to neither the target nor the source, such as voice-over, background music, or unidentified other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly audible unrelated sounds.",
-    text: () => "타이밍과 무관하게, 생성된 오디오에서 타깃·소스와 무관한 다른 소리(예: 내레이션, 배경 음악)가 얼마나 뚜렷하게 들립니까?",
-    english: () => "Regardless of timing, how clearly can you hear other sounds unrelated to the target and source, such as voice-over or background music, in the generated audio?",
+    helpKo: "소리의 정체성이 타깃과 소스 어느 쪽에도 부합하지 않는 소리가 생성 오디오에서 얼마나 명확하게 인지되는지 판단해주세요. 화면 속 동작에서 발생한 것처럼 들리더라도 소리의 정체성이 양쪽 모두와 다르면 포함합니다. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 뚜렷하게 들린다는 뜻입니다.",
+    helpEn: "Judge how clearly you recognize sounds whose identity matches neither the target nor the source. Include sounds that seem to come from visible actions when their identity matches neither prompt, as well as narration, background music, and other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly audible unrelated sounds.",
+    text: () => "타이밍과 무관하게, 생성된 오디오에서 소리의 정체성이 타깃·소스 어느 쪽에도 부합하지 않는 다른 소리(내레이션, 배경 음악 등 포함)가 얼마나 명확하게 인지됩니까?",
+    english: () => "Regardless of timing, how clearly do you recognize other sounds whose identity matches neither the target nor the source, including narration, background music, and other sounds?",
   },
   {
     key: "qTemporalAlignment",
@@ -174,15 +174,11 @@ function saveStudy() {
 }
 
 function makeTrials(participantId) {
-  const methods = [...new Set(manifest.samples.flatMap((sample) => sample.outputs.map((output) => output.methodKey)))];
   const seed = hashString(`${manifest.studyVersion}:${participantId}`);
-  const methodCodes = new Map(
-    seededShuffle(methods, seed ^ 0xa53a9e11).map((method, index) => [method, String.fromCharCode(65 + index)]),
-  );
   const samples = [...manifest.samples].sort((a, b) =>
     (a.dataset === 'VGGSound' ? 0 : 1) - (b.dataset === 'VGGSound' ? 0 : 1) ||
     a.datasetSampleIndex - b.datasetSampleIndex);
-  const trials = samples.flatMap((sample) => sample.outputs.map((output) => ({
+  const trials = samples.flatMap((sample) => seededShuffle(sample.outputs, hashString(`${seed}:${sample.sampleId}`)).map((output, index) => ({
     trialId: `${sample.sampleId}:${output.methodId}`,
     sampleIndex: sample.sampleIndex,
     dataset: sample.dataset,
@@ -191,10 +187,10 @@ function makeTrials(participantId) {
     sourcePrompt: sample.sourcePrompt,
     targetPrompt: sample.targetPrompt,
     methodId: output.methodId,
-    methodCode: methodCodes.get(output.methodKey),
+    methodCode: String.fromCharCode(65 + index),
     videoUrl: sample.videoUrl,
     audioUrl: output.audioUrl,
-  })).sort((a, b) => a.methodCode.localeCompare(b.methodCode)));
+  })));
   return trials;
 }
 
@@ -480,9 +476,14 @@ function createModelCard(trial) {
       status.textContent = "미디어를 불러오지 못했습니다. / Failed to load media.";
     });
   }
-  card.append(title, video, audio, button, pause, timeline, volume, status);
+  const media = document.createElement('div');
+  media.className = 'model-media';
+  media.append(title, video, audio, button, pause, timeline, volume, status);
+  const questions = document.createElement('div');
+  questions.className = 'model-questions';
+  card.append(media, questions);
   const response = study.responses[trial.trialId] || {};
-  card.append(...QUESTIONS.map(q => scaleControl(q, trial, response[q.key], card)));
+  questions.append(...QUESTIONS.map(q => scaleControl(q, trial, response[q.key], card)));
   return card;
 }
 
