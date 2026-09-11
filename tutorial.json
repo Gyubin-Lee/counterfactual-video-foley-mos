@@ -1,5 +1,5 @@
 {
-  "version": "tutorial-vggonly-v4",
+  "version": "tutorial-vggonly-v5",
   "zeroMeansMinimum": true,
   "examples": [
     {
@@ -26,14 +26,14 @@
       "referenceScores": [
         4,
         2,
-        5,
+        3,
         2,
         3
       ],
       "titleKo": "예시 2: 소스와 다른 소리가 섞이고 타깃의 타이밍도 어긋나는 경우",
       "titleEn": "Example 2: Source-like and other sounds, with mistimed target sound",
-      "explanationKo": "돼지 울음은 인지되지만, 강아지와 비슷한 소리도 희미하게 들려 소스 소리 잔류를 2점으로 평가합니다. 돼지 울음이 영상의 동작이 없는 시점에도 발생하므로 시간 정렬은 2점입니다. 타깃·소스 어느 쪽에도 부합하지 않는 다른 소리도 명확하게 인지되며, 전반적인 음질은 보통인 사례입니다.",
-      "explanationEn": "Pig oinks are recognizable, but faint dog-like sounds are also present, so source evidence is rated 2. Pig oinks also occur when no action is visible, so temporal alignment is rated 2. Other sounds whose identity matches neither target nor source are clearly recognizable. Overall audio quality is moderate.",
+      "explanationKo": "돼지 울음은 인지되지만, 강아지와 비슷한 소리도 희미하게 들려 소스 소리 잔류를 2점으로 평가합니다. 돼지 울음이 영상의 동작이 없는 시점에도 발생하므로 시간 정렬은 2점입니다. 타깃·소스 어느 쪽에도 부합하지 않는 다른 소리는 보통 정도로 명확하게 인식되어 무관한 소리 인지를 3점으로 평가하며, 전반적인 음질은 보통인 사례입니다.",
+      "explanationEn": "Pig oinks are recognizable, but faint dog-like sounds are also present, so source evidence is rated 2. Pig oinks also occur when no action is visible, so temporal alignment is rated 2. Other sounds whose identity matches neither target nor source are moderately recognizable, so unrelated evidence is rated 3. Overall audio quality is moderate.",
       "videoUrl": "media/tutorial/example-2.mp4"
     }
   ]

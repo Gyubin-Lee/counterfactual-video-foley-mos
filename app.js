@@ -7,11 +7,11 @@ const SCALE = [
   [5, "매우 그렇다", "Strongly agree"],
 ];
 const SEMANTIC_SCALE = [
-  [1, "전혀 들리지 않음", "Not audible at all"],
-  [2, "희미하게 들림", "Faintly audible"],
-  [3, "보통 정도로 뚜렷하게 들림", "Moderately clear"],
-  [4, "뚜렷하게 들림", "Clearly audible"],
-  [5, "매우 뚜렷하게 들림", "Very clearly audible"],
+  [1, "전혀 인식되지 않음", "Not recognized at all"],
+  [2, "희미하게 인식됨", "Faintly recognized"],
+  [3, "보통 정도로 명확하게 인식됨", "Moderately clearly recognized"],
+  [4, "명확하게 인식됨", "Clearly recognized"],
+  [5, "매우 명확하게 인식됨", "Very clearly recognized"],
 ];
 const QUESTIONS = [
   {
@@ -36,8 +36,8 @@ const QUESTIONS = [
     key: "qUnrelatedEvidence",
     scale: SEMANTIC_SCALE,
     title: "3. 무관한 소리 인지 / Unrelated sound evidence",
-    helpKo: "소리의 정체성이 타깃과 소스 어느 쪽에도 부합하지 않는 소리가 생성 오디오에서 얼마나 명확하게 인지되는지 판단해주세요. 화면 속 동작에서 발생한 것처럼 들리더라도 소리의 정체성이 양쪽 모두와 다르면 포함합니다. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 뚜렷하게 들린다는 뜻입니다.",
-    helpEn: "Judge how clearly you recognize sounds whose identity matches neither the target nor the source. Include sounds that seem to come from visible actions when their identity matches neither prompt, as well as narration, background music, and other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly audible unrelated sounds.",
+    helpKo: "소리의 정체성이 타깃과 소스 어느 쪽에도 부합하지 않는 소리가 생성 오디오에서 얼마나 명확하게 인지되는지 판단해주세요. 화면 속 동작에서 발생한 것처럼 들리더라도 소리의 정체성이 양쪽 모두와 다르면 포함합니다. 예를 들어 타깃·소스로 지정되지 않은 내레이션(voice-over), 배경 음악, 알 수 없는 다른 소리 등이 해당합니다. 단, 말소리나 음악 자체가 지정된 타깃 또는 소스라면 그 소리를 무관한 소리로 세지 마세요. 타이밍과 무관하게 실제 들리는 소리를 기준으로, 무관한 소리가 전혀 느껴지지 않으면 1, 매우 분명하게 느껴지면 5에 가깝게 답해주세요. 높은 점수일수록 무관한 소리가 더 명확하게 인식된다는 뜻입니다.",
+    helpEn: "Judge how clearly you recognize sounds whose identity matches neither the target nor the source. Include sounds that seem to come from visible actions when their identity matches neither prompt, as well as narration, background music, and other sounds. Do not count speech or music as unrelated when it is itself the specified target or source. Judge audible presence regardless of timing. Use ratings closer to 1 when no unrelated sound is perceived and closer to 5 when it is very clear. Higher scores mean more clearly recognized unrelated sounds.",
     text: () => "타이밍과 무관하게, 생성된 오디오에서 소리의 정체성이 타깃·소스 어느 쪽에도 부합하지 않는 다른 소리(내레이션, 배경 음악 등 포함)가 얼마나 명확하게 인지됩니까?",
     english: () => "Regardless of timing, how clearly do you recognize other sounds whose identity matches neither the target nor the source, including narration, background music, and other sounds?",
   },
@@ -61,8 +61,8 @@ const QUESTIONS = [
 ];
 
 for (const question of QUESTIONS.filter(q => q.scale === SEMANTIC_SCALE)) {
-  question.helpKo += " 단순한 음량이나 지속 시간이 아니라, 해당 소리로 알아들을 수 있는 정도를 평가해주세요. 1은 전혀 들리지 않음, 2는 희미하게 들림, 3은 보통 정도로 뚜렷하게 들림, 4는 뚜렷하게 들림, 5는 매우 뚜렷하게 들림입니다.";
-  question.helpEn += " Rate how clearly you can recognize the sound, rather than loudness or duration alone: 1 = not audible at all, 2 = faintly audible, 3 = moderately clear, 4 = clearly audible, 5 = very clearly audible.";
+  question.helpKo += " 단순한 음량이나 지속 시간이 아니라, 해당 소리로 알아들을 수 있는 정도를 평가해주세요. 1은 전혀 인식되지 않음, 2는 희미하게 인식됨, 3은 보통 정도로 명확하게 인식됨, 4는 명확하게 인식됨, 5는 매우 명확하게 인식됨입니다.";
+  question.helpEn += " Rate how clearly you can recognize the sound, rather than loudness or duration alone: 1 = not recognized at all, 2 = faintly recognized, 3 = moderately clearly recognized, 4 = clearly recognized, 5 = very clearly recognized.";
 }
 
 function soundSearchLinks(question, trial) {
@@ -281,7 +281,7 @@ function showTutorial() {
     study.tutorialFinished = false;
   }
   $('#tutorial-scale-note').textContent = tutorial.zeroMeansMinimum
-    ? '예시 점수는 실제 평가와 같은 1–5 척도입니다. 소리 인지 문항의 1은 전혀 들리지 않음, 시간 정렬·음질 문항의 1은 매우 그렇지 않음을 뜻합니다. / Example scores use the study’s 1–5 scales: 1 means not audible at all for sound evidence and strongly disagree for temporal alignment and audio quality.'
+    ? '예시 점수는 실제 평가와 같은 1–5 척도입니다. 소리 인지 문항의 1은 전혀 인식되지 않음, 시간 정렬·음질 문항의 1은 매우 그렇지 않음을 뜻합니다. / Example scores use the study’s 1–5 scales: 1 means not recognized at all for sound evidence and strongly disagree for temporal alignment and audio quality.'
     : '예시의 0은 해당 소리가 없거나 정렬이 없다는 설명용 표시입니다. 실제 평가에서는 0 대신 최저점 1을 선택하세요. / A tutorial score of 0 denotes absence; in the actual 1–5 study, use 1 instead.';
   $('#tutorial-examples').replaceChildren(...tutorial.examples.map(example => {
     const card = document.createElement('article');
